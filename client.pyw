@@ -1,9 +1,9 @@
 import asyncio
 import tkinter as tk
-from tkinter import font as tkfont
 from pathlib import Path
 from threading import Thread
 from websockets import connect
+from tkinter import font as tkfont
 from tomllib import loads as toml_loads
 
 cfg_path = Path("config.toml")
