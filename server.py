@@ -24,7 +24,6 @@ class ConnectionManager:
             return f"[系统] {username} 离开聊天室"
 
     async def broadcast(self, message: str):
-        logging.info(message)  # 记录日志
         for connection in self.active_connections:
             await connection.send_text(message)
 
